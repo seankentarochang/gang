@@ -3,7 +3,6 @@
 
 <body>
   
-   aaaaaaaaaaaaaaa
   <script>
     var aiden = "fortnite";
     
@@ -35,6 +34,10 @@
       const meeting = new VideoSDKMeeting();
       meeting.init(config);
     });
+    
+    script.src =
+      "https://sdk.videosdk.live/rtc-js-prebuilt/0.3.20/rtc-js-prebuilt.js";
+    document.getElementsByTagName("head")[0].appendChild(script);
 
   </script>
 
