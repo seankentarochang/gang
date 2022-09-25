@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <img src = "https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
-    <h1> 
-    Fortnite
-    </h1>
-    <p>
-      aidan
-    </p>
-  </body>
+
+<body>
+  <script>
+    var aiden = "fortnite";
+    
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+
+    script.addEventListener("load", function (event) {
+      const config = {
+        name: "",
+        meetingId: "god",
+        apiKey: "e8926392-22c3-4102-9619-52dea126879a",
+
+        containerId: null,
+
+        micEnabled: true,
+        webcamEnabled: true,
+        participantCanToggleSelfWebcam: true,
+        participantCanToggleSelfMic: true,
+
+        chatEnabled: true,
+        screenShareEnabled: true,
+
+        joinScreen: {
+          visible: true, // Show the join screen ?
+          title: aiden,
+        },
+      };
+
+      const meeting = new VideoSDKMeeting();
+      meeting.init(config);
+    });
+
+  </script>
+
+</body>
+
 </html>
